@@ -1,0 +1,1 @@
+之前提交的只有文档，新添加了maven工程，以及对作业做了修改：重新实验了一下sql的批量插入语句，将connection中的参数设置为rewriteBatchedStatements=true后效率得到大幅度提升

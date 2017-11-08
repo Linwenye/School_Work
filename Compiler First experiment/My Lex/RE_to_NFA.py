@@ -84,6 +84,14 @@ stack_node = []
 state = 0
 
 
+def set_init():
+    global stack_oprator
+    global stack_node
+    stack_node = []
+    stack_oprator = []
+
+
+# 调用之后需要set_init,相当不优雅了
 def re_to_nfa(reg):
     cat_needed = False
     for ch in reg:

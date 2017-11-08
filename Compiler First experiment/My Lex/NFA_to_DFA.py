@@ -15,6 +15,7 @@ class StateSet:
         self.state_set_list = []  # this is a list of set; just like list(set1,set2 ...,etc)
         self.marker = []  # this marks whether the state_set in the list has calculate the e-closure(move(A,char))
         self.dfa = []
+        self.terminals = {}  # {state:token}
 
     def is_all_marked(self):
         if 0 not in self.marker:
@@ -32,9 +33,67 @@ class StateSet:
         self.marker.append(0)
         self.dfa.append(DFAnode())
 
-        # def add_state_set(self, the_state_set):
-        #     if the_state_set not in self.state_set_list:
-        #         self.add_without_mark(the_state_set)
+    def DFA_to_DFAo(self, nfa_end, end_state_token):
+        final = []
+
+        states_non_term = []
+        states_term = []
+        for nfa_nodes, dfa_node in zip(self.state_set_list, self.dfa):
+            is_terminal = False
+            for node in nfa_nodes:
+                if node.state == nfa_end.state:
+                    is_terminal = True
+            if is_terminal:
+                states_term.append(dfa_node)
+            else:
+                states_non_term.append(dfa_node)
+
+        s_non_term = self._euqal(states_non_term)
+        s_term = self._euqal(states_term)
+
+        final.extend(s_non_term)
+        final.extend(s_term)
+
+        # remove extra and replace by the reprensent
+        for equal_set in final:
+            represent = equal_set[0]
+            for extra in equal_set:
+                if not extra == represent:
+                    self._remove_extra(represent, extra)
+
+        for i, nodes in enumerate(self.state_set_list):
+            for every_node in nodes:
+                for every_nfa_node, token in end_state_token.items():
+                    if every_nfa_node == every_node:
+                        self.terminals[self.dfa[i].state] = token
+
+    def _remove_extra(self, represent, extra_node):
+        self.state_set_list.pop(self.dfa.index(extra_node))
+        self.dfa.remove(extra_node)
+        for node in self.dfa:
+            if extra_node in node.next:
+                ii = node.next.index(extra_node)
+                node.next[ii] = represent
+
+    def _euqal(self, dfa_node_list):
+        res = []
+        visted = set()
+        for i in range(len(dfa_node_list)):
+            if i in visted:
+                continue
+            inner = [dfa_node_list[i]]
+            for j in range(i + 1, len(dfa_node_list)):
+                if self._compare(dfa_node_list[i], dfa_node_list[j]):
+                    inner.append(dfa_node_list[j])
+                    visted.add(j)
+            res.append(inner)
+        return res
+
+    def _compare(self, dfa_node1, dfa_node2):
+        if dfa_node1.next == dfa_node2.next and dfa_node1.edge == dfa_node2.edge:
+            return True
+        else:
+            return False
 
 
 def tran_table(nfa_start, term_tuple):
@@ -43,42 +102,42 @@ def tran_table(nfa_start, term_tuple):
     :param nfa_start: the start node of nfa
     :return: DFA
     """
-    state_set = StateSet()
+    state_set_table = StateSet()
     s0 = execute_closure([nfa_start])
-    state_set.add_without_mark(s0)
+    state_set_table.add_without_mark(s0)
 
     for ch in term_tuple:
         the_state_set = execute_edge_closure(s0, ch)
         if not the_state_set:  # judge of None set
             continue
-        if the_state_set not in state_set.state_set_list:
-            state_set.add_without_mark(the_state_set)
+        if the_state_set not in state_set_table.state_set_list:
+            state_set_table.add_without_mark(the_state_set)
 
-            # not in state_set, so the state must be it's index in dfa
-            state_set.dfa[0].add_edge(state_set.dfa[state - 1], ch)
+            # not in state_set_table, so the state must be it's index in dfa
+            state_set_table.dfa[0].add_edge(state_set_table.dfa[state - 1], ch)
         else:
-            next_node_index = state_set.state_set_list.index(the_state_set)
-            state_set.dfa[0].add_edge(state_set.dfa[next_node_index], ch)
+            next_node_index = state_set_table.state_set_list.index(the_state_set)
+            state_set_table.dfa[0].add_edge(state_set_table.dfa[next_node_index], ch)
 
-    state_set.marker[0] = 1  # mark as looked through
+    state_set_table.marker[0] = 1  # mark as looked through
 
-    while not state_set.is_all_marked():
-        index = state_set.get_not_marked()
-        unmarked_s = state_set.state_set_list[index]
-        dfa_node = state_set.dfa[index]
+    while not state_set_table.is_all_marked():
+        index = state_set_table.get_not_marked()
+        unmarked_s = state_set_table.state_set_list[index]
+        dfa_node = state_set_table.dfa[index]
         for ch in term_tuple:
             s_next = execute_edge_closure(unmarked_s, ch)
             if not s_next:  # judge of None set
                 continue
-            if s_next not in state_set.state_set_list:
-                state_set.add_without_mark(s_next)
-                dfa_node.add_edge(state_set.dfa[state - 1], ch)
+            if s_next not in state_set_table.state_set_list:
+                state_set_table.add_without_mark(s_next)
+                dfa_node.add_edge(state_set_table.dfa[state - 1], ch)
             else:
-                next_node_index = state_set.state_set_list.index(s_next)
-                dfa_node.add_edge(state_set.dfa[next_node_index], ch)
-        state_set.marker[index] = 1
+                next_node_index = state_set_table.state_set_list.index(s_next)
+                dfa_node.add_edge(state_set_table.dfa[next_node_index], ch)
+        state_set_table.marker[index] = 1
 
-    return state_set
+    return state_set_table
 
 
 state = 0

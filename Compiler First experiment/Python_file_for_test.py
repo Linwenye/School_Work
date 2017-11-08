@@ -4,8 +4,7 @@ import random
 
 class Proxies(object):
     a = 3 + 15   / 2
-    b = 'test str'
-
+    2b = 1
     def __init__(self):
         self.proxies = list()
     #     self.maintain_ip()
@@ -20,7 +19,5 @@ class Proxies(object):
 
     def random_ip(self):
         if len(self.proxies) < 20:
-            return self.proxies[random.randint(0, len(self.proxies) - 1)]
-        else:
             return self.proxies[random.randint(0, 20)]
 

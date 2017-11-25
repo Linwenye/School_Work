@@ -1,5 +1,7 @@
 #include "GPIOlib.h"
-
+#include <cstdio>
+#include <cmath>
+using namespace std;
 using namespace GPIO;
 
 void stop(){
@@ -12,43 +14,34 @@ void stop(){
 int main()
 {
 	init();
-
+	double allDistanceLeft = 0.0;
+	double allDistanceRight = 0.0;
 	//Move forward
+	for(int i =0;i<10;i++){
+		resetCounter();
+		controlLeft(FORWARD,50);
+		controlRight(FORWARD,50);
+		delay(500);
 
-	controlLeft(FORWARD,50);
-	controlRight(FORWARD,50);
-	delay(3000);
+		double distanceLeft = 0;
+		double distanceRight = 0;
 
-	//Stop
-	stop();
-	turnTo(30);
-	delay(1000);
-	turnTo(-30);
-	delay(1000);
-	stop();
+		int readingLeft = 0, readingRight = 0;
+		getCounter(&readingLeft, &readingRight);
+		if (readingLeft == -1 || readingRight == -1)
+		{
+			printf("Error!\n");
+			continue;
+		}
+	//Distance is in mm.
+		distanceLeft = readingLeft*63.4*M_PI / 390.0;
+		distanceRight = readingRight*63.4*M_PI / 390.0;
 
-	//Move backward
-	controlLeft(BACKWARD,50);
-	controlRight(BACKWARD,50);
-	delay(1000);
-
-	//Stop
-	stop();
-
-	//2 motors can work at different speeds.
-	controlLeft(FORWARD,30);
-	controlRight(FORWARD,40);
-	delay(1000);
-
-	//Stop
-	stop();
-
-	//Even directions can differ from each other.
-	controlLeft(BACKWARD,35);
-	controlRight(FORWARD,20);
-	delay(1000);
-
-	//Don't forget to stop all motors before exiting.
+		allDistanceLeft = distanceLeft+allDistanceLeft;
+		allDistanceRight = distanceRight+allDistanceRight;
+		printf("Left %.2lf cm, right %.2lf cm\n", distanceLeft / 10.0, distanceRight / 10.0);
+		printf("Total: Left %.2lf cm, right %.2lf cm\n", allDistanceLeft / 10.0, allDistanceRight / 10.0);
+	}
 	stop();
 	return 0;
 }

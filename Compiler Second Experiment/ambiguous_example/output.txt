@@ -1,0 +1,28 @@
+Stack: [0] Symbols: [] Input: ['1', '+', '2', '+', '+', '3', '*', '(', '5', '+', '8', ')', '$'] Action: shift
+Stack: [0, 30] Symbols: ['1'] Input: ['+', '2', '+', '+', '3', '*', '(', '5', '+', '8', ')', '$'] Action: reduce by E->1
+Stack: [0, 1] Symbols: ['E'] Input: ['+', '2', '+', '+', '3', '*', '(', '5', '+', '8', ')', '$'] Action: shift
+Stack: [0, 1, 2] Symbols: ['E', '+'] Input: ['2', '+', '+', '3', '*', '(', '5', '+', '8', ')', '$'] Action: shift
+Stack: [0, 1, 2, 33] Symbols: ['E', '+', '2'] Input: ['+', '+', '3', '*', '(', '5', '+', '8', ')', '$'] Action: reduce by E->2
+Stack: [0, 1, 2, 3] Symbols: ['E', '+', 'E'] Input: ['+', '+', '3', '*', '(', '5', '+', '8', ')', '$'] Action: reduce by E->E+E
+there is a shift/reduce conflict and use precedence and associate rule to elimate
+
+Stack: [0, 1] Symbols: ['E'] Input: ['+', '+', '3', '*', '(', '5', '+', '8', ')', '$'] Action: shift
+Stack: [0, 1, 2] Symbols: ['E', '+'] Input: ['+', '3', '*', '(', '5', '+', '8', ')', '$'] Action: desert unexpect input +
+
+Stack: [0, 1, 2] Symbols: ['E', '+'] Input: ['3', '*', '(', '5', '+', '8', ')', '$'] Action: shift
+Stack: [0, 1, 2, 32] Symbols: ['E', '+', '3'] Input: ['*', '(', '5', '+', '8', ')', '$'] Action: reduce by E->3
+Stack: [0, 1, 2, 3] Symbols: ['E', '+', 'E'] Input: ['*', '(', '5', '+', '8', ')', '$'] Action: shift
+there is a shift/reduce conflict and use precedence and associate rule to elimate
+
+Stack: [0, 1, 2, 3, 4] Symbols: ['E', '+', 'E', '*'] Input: ['(', '5', '+', '8', ')', '$'] Action: shift
+Stack: [0, 1, 2, 3, 4, 8] Symbols: ['E', '+', 'E', '*', '('] Input: ['5', '+', '8', ')', '$'] Action: shift
+Stack: [0, 1, 2, 3, 4, 8, 24] Symbols: ['E', '+', 'E', '*', '(', '5'] Input: ['+', '8', ')', '$'] Action: reduce by E->5
+Stack: [0, 1, 2, 3, 4, 8, 9] Symbols: ['E', '+', 'E', '*', '(', 'E'] Input: ['+', '8', ')', '$'] Action: shift
+Stack: [0, 1, 2, 3, 4, 8, 9, 11] Symbols: ['E', '+', 'E', '*', '(', 'E', '+'] Input: ['8', ')', '$'] Action: shift
+Stack: [0, 1, 2, 3, 4, 8, 9, 11, 29] Symbols: ['E', '+', 'E', '*', '(', 'E', '+', '8'] Input: [')', '$'] Action: reduce by E->8
+Stack: [0, 1, 2, 3, 4, 8, 9, 11, 12] Symbols: ['E', '+', 'E', '*', '(', 'E', '+', 'E'] Input: [')', '$'] Action: reduce by E->E+E
+Stack: [0, 1, 2, 3, 4, 8, 9] Symbols: ['E', '+', 'E', '*', '(', 'E'] Input: [')', '$'] Action: shift
+Stack: [0, 1, 2, 3, 4, 8, 9, 10] Symbols: ['E', '+', 'E', '*', '(', 'E', ')'] Input: ['$'] Action: reduce by E->(E)
+Stack: [0, 1, 2, 3, 4, 5] Symbols: ['E', '+', 'E', '*', 'E'] Input: ['$'] Action: reduce by E->E*E
+Stack: [0, 1, 2, 3] Symbols: ['E', '+', 'E'] Input: ['$'] Action: reduce by E->E+E
+Stack: [0, 1] Symbols: ['E'] Input: ['$'] Action: accept

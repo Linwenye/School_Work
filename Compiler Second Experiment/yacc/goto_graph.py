@@ -133,6 +133,13 @@ class GotoGraph:
                 res = node.state
         return res
 
+    def _prece(self, a, b):
+        if a in precedence and b in precedence:
+            if precedence.index(a) < precedence.index(b):
+                return True
+            else:
+                return False
+
     def goto(self, state_stack, shifted, unshifted):
         """
         print parsing action on input
@@ -142,44 +149,85 @@ class GotoGraph:
         def print_action(action):
             print 'Stack:', state_stack, 'Symbols:', shifted, 'Input:', unshifted, 'Action:', action
 
+        def do_reduce():
+            print_action('reduce by ' + the_production[0] + '->' + ''.join(the_production[1]))
+
+            # pop shifted to reduce
+            for i in range(0, len(the_production[1])):
+                shifted.pop()
+                state_stack.pop()
+            shifted.append(the_production[0])
+            state_stack.append(self.node_list[state_stack[-1]].next[
+                                   self.node_list[state_stack[-1]].edge.index(the_production[0])])
+
+        def do_shift():
+            print_action('shift')
+            next_state_int = self.node_list[state_int].next[self.node_list[state_int].edge.index(char)]
+            state_stack.append(next_state_int)
+            shift(shifted, unshifted)
+
+        last_char = None
         while True:
 
             char = unshifted[0]
             state_int = state_stack[-1]
-            is_end = (char == '$' and len(self.node_list[state_int].production_list) == 1 and
+            is_end = (char == '$' and not self.node_list[state_int].production_list[0][2] and
                       self.node_list[state_int].production_list[0][0] == '~')
+
+            is_shift = False
+            reduction = False
+
             if is_end:
                 print_action('accept')
                 break
 
             if char in self.node_list[state_int].edge:
-                print_action('shift')
-                next_state_int = self.node_list[state_int].next[self.node_list[state_int].edge.index(char)]
-                state_stack.append(next_state_int)
-                shift(shifted, unshifted)
+                is_shift = True
 
-            else:
-                reduction = False
-                the_production = None
-                for production in self.node_list[state_int].production_list:
-                    if not production[2] and char == production[3]:
-                        reduction = True
-                        the_production = production
-                if reduction:
-                    print_action('reduce by ' + the_production[0] + '->' + ''.join(the_production[1]))
+            the_production = None
+            for production in self.node_list[state_int].production_list:
+                if not production[2] and char == production[3]:
+                    reduction = True
+                    the_production = production
 
-                    # pop shifted to reduce
-                    shifted = shifted[0:len(shifted) - len(the_production[1])]
-                    shifted.append(the_production[0])
-                    state_stack = state_stack[0:len(state_stack) - len(the_production[1])]
-                    state_stack.append(self.node_list[state_stack[-1]].next[
-                                           self.node_list[state_stack[-1]].edge.index(the_production[0])])
+            if not is_shift:
+
+                if not the_production:
+                    # error recovery here!
+                    print_action('desert unexpect input ' + char+'\n')
+                    unshifted.pop(0)
+                    continue
                 else:
-                    # add ambiguous handling or error recovery here!
-                    pass
+                    # handle ambiguity
+                    # reduce-reduce conflict
+                    do_reduce()
+
+            elif is_shift and not reduction:
+                do_shift()
+                if char in precedence:
+                    # last_char for judge precedence
+                    last_char = char
+            elif is_shift and reduction:
+                if last_char == char:
+                    if association[char] == 'left':
+                        do_reduce()
+                    elif association[char] == 'right':
+                        do_shift()
+                        if char in precedence:
+                            # last_char for judge precedence
+                            last_char = char
+                else:
+                    if self._prece(last_char, char):
+                        do_reduce()
+                    else:
+                        do_shift()
+                        if char in precedence:
+                            # last_char for judge precedence
+                            last_char = char
+                print 'there is a shift/reduce conflict and use precedence and associate rule to elimate\n'
 
     def parse(self, i_filepath):
-        # test_filepath = "E:\GitHub\School_Work\Compiler Second Experiment/test_calculator.txt"
+        # test_filepath = "E:\GitHub\School_Work\Compiler Second Experiment/test.txt"
         f_test = open(i_filepath)
         input_stream = f_test.read()
 
@@ -194,8 +242,19 @@ class GotoGraph:
 grammars = []
 nonterminal_set = set()
 grammar_symbols = set()
-filepath = 'E:\GitHub\School_Work\Compiler Second Experiment/textbook_grammar.y'
-# filepath = "E:\GitHub\School_Work\Compiler Second Experiment\input_grammar.y"
+# which_example = 'textbook_example'
+which_example = 'ambiguous_example'
+filepath = 'E:\GitHub\School_Work\Compiler Second Experiment/' + which_example + '/grammar.y'
+# filepath = "E:\GitHub\School_Work\Compiler Second Experiment\grammar.y"
+
+rule_filepath = 'E:\GitHub\School_Work\Compiler Second Experiment/ambiguous_example/ambiguous_handle.y'
+with open(rule_filepath) as ff:
+    precedence_line = ff.readline().strip()
+    precedence = precedence_line.split('>')
+    association = {}
+    for associate_line in ff:
+        line = associate_line.split(':')
+        association[line[0]] = line[1].strip()
 f = open(filepath)
 for line in f:
 
@@ -211,6 +270,6 @@ for line in f:
         grammar_symbols.update(set(item))
 S = GotoGraph(grammars[0][0])
 
-test_filepath = "E:\GitHub\School_Work\Compiler Second Experiment/test_textbook_gram.txt"
+test_filepath = "E:\GitHub\School_Work\Compiler Second Experiment/" + which_example + "/test.txt"
 S.parse(test_filepath)
 # print S

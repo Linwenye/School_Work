@@ -58,3 +58,4 @@ Debug/
 *.vcxproj.filters
 *.VC.db
 *.sln
+*.VC.opendb

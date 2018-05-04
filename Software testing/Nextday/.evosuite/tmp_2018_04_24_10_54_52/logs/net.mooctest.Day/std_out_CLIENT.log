@@ -1,0 +1,76 @@
+* Starting client
+* Connecting to master process on port 19189
+* Analyzing classpath: 
+  - C:\Users\Venric\Desktop\Nextday\target\test-classes
+  - C:\Users\Venric\Desktop\Nextday\target\classes
+  - C:\Users\Venric\.m2\repository\junit\junit\4.12\junit-4.12.jar
+  - C:\Users\Venric\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar
+* Finished analyzing classpath
+* Generating tests for class net.net.mooctest.Day
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+[MASTER] 10:55:11.146 [pool-2-thread-1] WARN  TestSuiteSerialization - Cannot load tests because file does not exist: C:\Users\Venric\Desktop\Nextday\.evosuite\evosuite-seeds\net.net.mooctest.Day.seed
+* Loaded 0 tests from C:\Users\Venric\Desktop\Nextday\.evosuite\evosuite-seeds\net.net.mooctest.Day.seed
+* Total number of test goals: 
+  - Line 22
+  - Branch 20
+  - Exception 0
+  - MutationFactory 53
+  - Output 9
+  - Method 6
+  - MethodNoException 6
+  - CBranchFitnessFactory 20
+* Using seed 1524538499641
+* Starting evolution
+* Search finished after 136s and 638 generations, 128254 statements, best individual has fitness: 0.75
+* Writing sequences to pool
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 22
+* Number of covered goals: 22
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 20
+* Number of covered goals: 20
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 3
+* Number of covered goals: 3
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 100%
+* Total number of goals: 53
+* Number of covered goals: 53
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100%
+* Total number of goals: 9
+* Number of covered goals: 9
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 95%
+* Total number of goals: 20
+* Number of covered goals: 19
+* Generated 18 tests with total length 82
+* Resulting test suite's coverage: 99% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 96%
+* Compiling and checking tests
+* Writing JUnit test case 'Day_ESTest' to C:\Users\Venric\Desktop\Nextday\.evosuite\tmp_2018_04_24_10_54_52\tests
+* Done!
+

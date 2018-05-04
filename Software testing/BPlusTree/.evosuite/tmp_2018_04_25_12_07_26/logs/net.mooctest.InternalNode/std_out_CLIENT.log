@@ -1,0 +1,90 @@
+* Starting client
+* Connecting to master process on port 15436
+* Analyzing classpath: 
+  - C:\Users\Venric\Desktop\BPlusTree\target\test-classes
+  - C:\Users\Venric\Desktop\BPlusTree\target\classes
+  - C:\Users\Venric\.m2\repository\junit\junit\4.12\junit-4.12.jar
+  - C:\Users\Venric\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar
+* Finished analyzing classpath
+* Generating tests for class net.mooctest.InternalNode
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Loaded 50 tests from C:\Users\Venric\Desktop\BPlusTree\.evosuite\evosuite-seeds\net.mooctest.InternalNode.seed
+* Total number of test goals: 
+  - Line 95
+  - Branch 47
+  - Exception 0
+  - MutationFactory 425
+  - Output 21
+  - Method 9
+  - MethodNoException 9
+  - CBranchFitnessFactory 47
+* Using seed 1524629249122
+* Starting evolution
+* Search finished after 127s and 609 generations, 219770 statements, best individual has fitness: 40.79761904761905
+* Writing sequences to pool
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 97%
+* Total number of goals: 95
+* Number of covered goals: 92
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 91%
+* Total number of goals: 47
+* Number of covered goals: 43
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 20
+* Number of covered goals: 20
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 94%
+* Total number of goals: 425
+* Number of covered goals: 399
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 57%
+* Total number of goals: 21
+* Number of covered goals: 12
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 9
+* Number of covered goals: 9
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 9
+* Number of covered goals: 9
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 91%
+* Total number of goals: 47
+* Number of covered goals: 43
+* Generated 39 tests with total length 197
+* Resulting test suite's coverage: 91% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 63%
+* Compiling and checking tests
+[MASTER] 12:09:55.812 [pool-2-thread-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+[MASTER] 12:09:55.813 [pool-2-thread-1] WARN  JUnitAnalyzer - Failing test:
+ InternalNode<Object> internalNode0 = new InternalNode<Object>(Integer.MAX_VALUE);
+
+[MASTER] 12:09:56.445 [pool-2-thread-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+[MASTER] 12:09:56.445 [pool-2-thread-1] WARN  JUnitAnalyzer - Failing test:
+ LinkedList<Integer> linkedList0 = new LinkedList<Integer>();
+LinkedList<Node<LeafNode<Object>>> linkedList1 = new LinkedList<Node<LeafNode<Object>>>();
+InternalNode<LeafNode<Object>> internalNode0 = new InternalNode<LeafNode<Object>>(Integer.MAX_VALUE, linkedList0, linkedList1);
+
+[MASTER] 12:09:57.016 [pool-2-thread-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+[MASTER] 12:09:57.016 [pool-2-thread-1] WARN  JUnitAnalyzer - Failing test:
+ InsertionResult<InternalNode<Integer>> insertionResult0 = new InsertionResult<InternalNode<Integer>>((-2443));
+InternalNode<InternalNode<Integer>> internalNode0 = new InternalNode<InternalNode<Integer>>(Integer.MAX_VALUE, insertionResult0);
+
+* Writing JUnit test case 'InternalNode_ESTest' to C:\Users\Venric\Desktop\BPlusTree\.evosuite\tmp_2018_04_25_12_07_26\tests
+* Done!
+

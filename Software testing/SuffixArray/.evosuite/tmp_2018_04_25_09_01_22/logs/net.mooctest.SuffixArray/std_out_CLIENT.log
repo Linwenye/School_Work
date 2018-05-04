@@ -1,0 +1,31 @@
+* Starting client
+* Connecting to master process on port 13371
+* Analyzing classpath: 
+  - E:\GitHub\School_Work\Software testing\SuffixArray\target\test-classes
+  - E:\GitHub\School_Work\Software testing\SuffixArray\target\classes
+  - C:\Users\Venric\.m2\repository\junit\junit\4.12\junit-4.12.jar
+  - C:\Users\Venric\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar
+* Finished analyzing classpath
+* Generating tests for class net.mooctest.SuffixArray
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Loaded 59 tests from E:\GitHub\School_Work\Software testing\SuffixArray\.evosuite\evosuite-seeds\net.mooctest.SuffixArray.seed
+* Total number of test goals: 
+  - Line 143
+  - Branch 106
+  - Exception 0
+  - MutationFactory 526
+  - Output 9
+  - Method 10
+  - MethodNoException 10
+  - CBranchFitnessFactory 106
+* Using seed 1524618085800
+* Starting evolution

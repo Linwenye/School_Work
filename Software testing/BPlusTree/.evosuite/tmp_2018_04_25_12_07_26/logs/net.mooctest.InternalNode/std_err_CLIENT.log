@@ -1,0 +1,5 @@
+[MASTER] 12:07:32.093 [pool-2-thread-1] ERROR TestCluster - Failed to check cache for net.mooctest.InternalNode<Value> : Type points to itself
+[MASTER] 12:07:32.094 [pool-2-thread-1] ERROR TestCluster - Failed to check cache for net.mooctest.LeafNode<Value> : Type points to itself
+[MASTER] 12:07:32.364 [pool-2-thread-1] ERROR TestCluster - Failed to check cache for net.mooctest.Node<Value> : Type points to itself
+[MASTER] 12:07:34.556 [pool-2-thread-1] ERROR TestCluster - Failed to check cache for java.util.function.Function<T, R> : Type points to itself
+[MASTER] 12:09:59.592 [pool-2-thread-1] ERROR JUnitAnalyzer - Ran out of time while checking tests

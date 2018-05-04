@@ -1,0 +1,84 @@
+* Starting client
+* Connecting to master process on port 17327
+* Analyzing classpath: 
+  - C:\Users\Venric\Desktop\JCLO\target\test-classes
+  - C:\Users\Venric\Desktop\JCLO\target\classes
+  - C:\Users\Venric\.m2\repository\junit\junit\4.12\junit-4.12.jar
+  - C:\Users\Venric\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar
+* Finished analyzing classpath
+* Generating tests for class net.mooctest.JCLO
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Loaded 27 tests from C:\Users\Venric\Desktop\JCLO\.evosuite\evosuite-seeds\net.mooctest.JCLO.seed
+* Total number of test goals: 
+  - Line 165
+  - Branch 114
+  - Exception 0
+  - MutationFactory 299
+  - Output 6
+  - Method 7
+  - MethodNoException 7
+  - CBranchFitnessFactory 114
+* Using seed 1524629927651
+* Starting evolution
+* Search finished after 246s and 944 generations, 356888 statements, best individual has fitness: 450.5859144274626
+* Writing sequences to pool
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 58%
+* Total number of goals: 165
+* Number of covered goals: 95
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 45%
+* Total number of goals: 114
+* Number of covered goals: 51
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 9
+* Number of covered goals: 9
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 49%
+* Total number of goals: 299
+* Number of covered goals: 146
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 50%
+* Total number of goals: 6
+* Number of covered goals: 3
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 7
+* Number of covered goals: 7
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 7
+* Number of covered goals: 7
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 45%
+* Total number of goals: 114
+* Number of covered goals: 51
+* Generated 16 tests with total length 70
+* Resulting test suite's coverage: 68% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 17%
+* Compiling and checking tests
+[MASTER] 12:23:12.419 [pool-2-thread-1] WARN  JUnitAnalyzer - Found unstable test named test0 -> class java.lang.ArrayIndexOutOfBoundsException: 0
+[MASTER] 12:23:12.420 [pool-2-thread-1] WARN  JUnitAnalyzer - Failing test:
+ Object object0 = new Object();
+String[][] stringArray0 = new String[2][0];
+String[] stringArray1 = new String[5];
+stringArray1[0] = "-=";
+JCLO jCLO0 = new JCLO(object0, stringArray0);
+jCLO0.parse(stringArray1);
+
+* Writing JUnit test case 'JCLO_ESTest' to C:\Users\Venric\Desktop\JCLO\.evosuite\tmp_2018_04_25_12_18_44\tests
+* Done!
+

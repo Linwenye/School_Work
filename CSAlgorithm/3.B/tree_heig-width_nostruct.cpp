@@ -3,7 +3,9 @@
 #include <algorithm>
 using namespace std;
 
-
+/*
+树的最长路径！不一定通过根节点
+*/
 int *prefix;
 int *infix;
 int n = 0;
@@ -56,6 +58,9 @@ int main() {
 		infix_map[infix[i]] = i;
 	}
 	height_seek();
+
+	delete[]prefix;
+	delete[]infix;
 	printf("I have read the rules about plagiarism punishment\n");
 	printf("%d\n", max(left_height, right_height));
 	printf("%d", left_height + right_height);

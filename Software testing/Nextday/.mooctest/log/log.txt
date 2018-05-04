@@ -1,0 +1,492 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for net.net.mooctest:Nextday:jar:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 61, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 72, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 83, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 94, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 105, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 116, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 127, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 138, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 149, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 160, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 171, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 182, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 193, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 204, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 215, column 9
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Nextday 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading from nexus: http://118.178.131.206:8081/nexus/content/groups/public/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom
+Progress (1): 3.9 kB
+                    
+[WARNING] Checksum validation failed, expected  but is 8571a1cd21bed4fe28656c3303526fa7d1e582ad from nexus for http://118.178.131.206:8081/nexus/content/groups/public/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom
+Progress (1): 3.9 kB
+[WARNING] Could not validate integrity of download from http://118.178.131.206:8081/nexus/content/groups/public/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom: Checksum validation failed, expected  but is 8571a1cd21bed4fe28656c3303526fa7d1e582ad
+                    
+[WARNING] Checksum validation failed, expected  but is 8571a1cd21bed4fe28656c3303526fa7d1e582ad from nexus for http://118.178.131.206:8081/nexus/content/groups/public/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom
+Downloaded from nexus: http://118.178.131.206:8081/nexus/content/groups/public/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom (3.9 kB at 8.0 kB/s)
+Downloading from nexus: http://118.178.131.206:8081/nexus/content/groups/public/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom
+Progress (1): 4.1/13 kB
+Progress (1): 7.9/13 kB
+Progress (1): 12/13 kB 
+Progress (1): 13 kB   
+                   
+[WARNING] Checksum validation failed, expected  but is beff44ae4eff1e5c79c01972083cd11fa6982462 from nexus for http://118.178.131.206:8081/nexus/content/groups/public/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom
+Progress (1): 4.1/13 kB
+Progress (1): 7.9/13 kB
+Progress (1): 12/13 kB 
+Progress (1): 13 kB   
+[WARNING] Could not validate integrity of download from http://118.178.131.206:8081/nexus/content/groups/public/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom: Checksum validation failed, expected  but is beff44ae4eff1e5c79c01972083cd11fa6982462
+                   
+[WARNING] Checksum validation failed, expected  but is beff44ae4eff1e5c79c01972083cd11fa6982462 from nexus for http://118.178.131.206:8081/nexus/content/groups/public/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom
+Downloaded from nexus: http://118.178.131.206:8081/nexus/content/groups/public/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom (13 kB at 195 kB/s)
+Downloading from nexus: http://118.178.131.206:8081/nexus/content/groups/public/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar
+Progress (1): 4.1/25 kB
+Progress (1): 7.9/25 kB
+Progress (1): 12/25 kB 
+Progress (1): 16/25 kB
+Progress (1): 20/25 kB
+Progress (1): 24/25 kB
+Progress (1): 25 kB   
+                   
+[WARNING] Checksum validation failed, expected  but is 75653decaefa85ca8114ff3a4f869bb2ee6d605d from nexus for http://118.178.131.206:8081/nexus/content/groups/public/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar
+Progress (1): 4.1/25 kB
+Progress (1): 7.9/25 kB
+Progress (1): 12/25 kB 
+Progress (1): 16/25 kB
+Progress (1): 20/25 kB
+Progress (1): 24/25 kB
+Progress (1): 25 kB   
+[WARNING] Could not validate integrity of download from http://118.178.131.206:8081/nexus/content/groups/public/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar: Checksum validation failed, expected  but is 75653decaefa85ca8114ff3a4f869bb2ee6d605d
+                   
+[WARNING] Checksum validation failed, expected  but is 75653decaefa85ca8114ff3a4f869bb2ee6d605d from nexus for http://118.178.131.206:8081/nexus/content/groups/public/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar
+Downloaded from nexus: http://118.178.131.206:8081/nexus/content/groups/public/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar (25 kB at 328 kB/s)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Nextday ---
+Downloading from nexus: http://118.178.131.206:8081/nexus/content/groups/public/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom
+Progress (1): 4.1 kB
+                    
+[WARNING] Checksum validation failed, expected  but is fe3d8457b0cf4e219fd8e3edad5054b8e38f17b0 from nexus for http://118.178.131.206:8081/nexus/content/groups/public/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom
+Progress (1): 4.1 kB
+[WARNING] Could not validate integrity of download from http://118.178.131.206:8081/nexus/content/groups/public/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom: Checksum validation failed, expected  but is fe3d8457b0cf4e219fd8e3edad5054b8e38f17b0
+                    
+[WARNING] Checksum validation failed, expected  but is fe3d8457b0cf4e219fd8e3edad5054b8e38f17b0 from nexus for http://118.178.131.206:8081/nexus/content/groups/public/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom
+Downloaded from nexus: http://118.178.131.206:8081/nexus/content/groups/public/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom (4.1 kB at 62 kB/s)
+Downloading from nexus: http://118.178.131.206:8081/nexus/content/groups/public/org/sonatype/spice/spice-parent/16/spice-parent-16.pom
+Progress (1): 4.1/8.4 kB
+Progress (1): 7.9/8.4 kB
+Progress (1): 8.4 kB    
+                    
+[WARNING] Checksum validation failed, expected  but is aefd3135046b7c3f5835283bcc3b670fc46692b9 from nexus for http://118.178.131.206:8081/nexus/content/groups/public/org/sonatype/spice/spice-parent/16/spice-parent-16.pom
+Progress (1): 4.0/8.4 kB
+Progress (1): 8.1/8.4 kB
+Progress (1): 8.4 kB    
+[WARNING] Could not validate integrity of download from http://118.178.131.206:8081/nexus/content/groups/public/org/sonatype/spice/spice-parent/16/spice-parent-16.pom: Checksum validation failed, expected  but is aefd3135046b7c3f5835283bcc3b670fc46692b9
+                    
+[WARNING] Checksum validation failed, expected  but is aefd3135046b7c3f5835283bcc3b670fc46692b9 from nexus for http://118.178.131.206:8081/nexus/content/groups/public/org/sonatype/spice/spice-parent/16/spice-parent-16.pom
+Downloaded from nexus: http://118.178.131.206:8081/nexus/content/groups/public/org/sonatype/spice/spice-parent/16/spice-parent-16.pom (8.4 kB at 88 kB/s)
+Downloading from nexus: http://118.178.131.206:8081/nexus/content/groups/public/org/sonatype/forge/forge-parent/5/forge-parent-5.pom
+Progress (1): 4.1/8.4 kB
+Progress (1): 7.9/8.4 kB
+Progress (1): 8.4 kB    
+                    
+[WARNING] Checksum validation failed, expected  but is a557514263bbd4a6daef8f125ab80e78413292d3 from nexus for http://118.178.131.206:8081/nexus/content/groups/public/org/sonatype/forge/forge-parent/5/forge-parent-5.pom
+Progress (1): 4.1/8.4 kB
+Progress (1): 7.9/8.4 kB
+Progress (1): 8.4 kB    
+[WARNING] Could not validate integrity of download from http://118.178.131.206:8081/nexus/content/groups/public/org/sonatype/forge/forge-parent/5/forge-parent-5.pom: Checksum validation failed, expected  but is a557514263bbd4a6daef8f125ab80e78413292d3
+                    
+[WARNING] Checksum validation failed, expected  but is a557514263bbd4a6daef8f125ab80e78413292d3 from nexus for http://118.178.131.206:8081/nexus/content/groups/public/org/sonatype/forge/forge-parent/5/forge-parent-5.pom
+Downloaded from nexus: http://118.178.131.206:8081/nexus/content/groups/public/org/sonatype/forge/forge-parent/5/forge-parent-5.pom (8.4 kB at 83 kB/s)
+Downloading from nexus: http://118.178.131.206:8081/nexus/content/groups/public/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar
+Progress (1): 4.1/226 kB
+Progress (1): 7.9/226 kB
+Progress (1): 12/226 kB 
+Progress (1): 16/226 kB
+Progress (1): 20/226 kB
+Progress (1): 24/226 kB
+Progress (1): 28/226 kB
+Progress (1): 32/226 kB
+Progress (1): 37/226 kB
+Progress (1): 41/226 kB
+Progress (1): 45/226 kB
+Progress (1): 49/226 kB
+Progress (1): 53/226 kB
+Progress (1): 57/226 kB
+Progress (1): 61/226 kB
+Progress (1): 65/226 kB
+Progress (1): 69/226 kB
+Progress (1): 73/226 kB
+Progress (1): 77/226 kB
+Progress (1): 82/226 kB
+Progress (1): 86/226 kB
+Progress (1): 90/226 kB
+Progress (1): 94/226 kB
+Progress (1): 98/226 kB
+Progress (1): 102/226 kB
+Progress (1): 106/226 kB
+Progress (1): 110/226 kB
+Progress (1): 114/226 kB
+Progress (1): 118/226 kB
+Progress (1): 123/226 kB
+Progress (1): 127/226 kB
+Progress (1): 131/226 kB
+Progress (1): 135/226 kB
+Progress (1): 139/226 kB
+Progress (1): 143/226 kB
+Progress (1): 147/226 kB
+Progress (1): 151/226 kB
+Progress (1): 155/226 kB
+Progress (1): 159/226 kB
+Progress (1): 164/226 kB
+Progress (1): 168/226 kB
+Progress (1): 172/226 kB
+Progress (1): 176/226 kB
+Progress (1): 180/226 kB
+Progress (1): 184/226 kB
+Progress (1): 188/226 kB
+Progress (1): 192/226 kB
+Progress (1): 196/226 kB
+Progress (1): 200/226 kB
+Progress (1): 204/226 kB
+Progress (1): 209/226 kB
+Progress (1): 213/226 kB
+Progress (1): 217/226 kB
+Progress (1): 221/226 kB
+Progress (1): 225/226 kB
+Progress (1): 226 kB    
+                    
+[WARNING] Checksum validation failed, expected  but is d63aa0daf60d573bada235e2b4207617dcf24959 from nexus for http://118.178.131.206:8081/nexus/content/groups/public/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar
+Progress (1): 4.1/226 kB
+Progress (1): 7.9/226 kB
+Progress (1): 12/226 kB 
+Progress (1): 16/226 kB
+Progress (1): 20/226 kB
+Progress (1): 24/226 kB
+Progress (1): 28/226 kB
+Progress (1): 32/226 kB
+Progress (1): 37/226 kB
+Progress (1): 41/226 kB
+Progress (1): 45/226 kB
+Progress (1): 49/226 kB
+Progress (1): 53/226 kB
+Progress (1): 57/226 kB
+Progress (1): 61/226 kB
+Progress (1): 65/226 kB
+Progress (1): 69/226 kB
+Progress (1): 73/226 kB
+Progress (1): 77/226 kB
+Progress (1): 82/226 kB
+Progress (1): 86/226 kB
+Progress (1): 90/226 kB
+Progress (1): 94/226 kB
+Progress (1): 98/226 kB
+Progress (1): 102/226 kB
+Progress (1): 106/226 kB
+Progress (1): 110/226 kB
+Progress (1): 114/226 kB
+Progress (1): 118/226 kB
+Progress (1): 123/226 kB
+Progress (1): 127/226 kB
+Progress (1): 131/226 kB
+Progress (1): 135/226 kB
+Progress (1): 139/226 kB
+Progress (1): 143/226 kB
+Progress (1): 147/226 kB
+Progress (1): 151/226 kB
+Progress (1): 155/226 kB
+Progress (1): 159/226 kB
+Progress (1): 164/226 kB
+Progress (1): 168/226 kB
+Progress (1): 172/226 kB
+Progress (1): 176/226 kB
+Progress (1): 180/226 kB
+Progress (1): 184/226 kB
+Progress (1): 188/226 kB
+Progress (1): 192/226 kB
+Progress (1): 196/226 kB
+Progress (1): 200/226 kB
+Progress (1): 204/226 kB
+Progress (1): 209/226 kB
+Progress (1): 213/226 kB
+Progress (1): 217/226 kB
+Progress (1): 221/226 kB
+Progress (1): 225/226 kB
+Progress (1): 226 kB    
+[WARNING] Could not validate integrity of download from http://118.178.131.206:8081/nexus/content/groups/public/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar: Checksum validation failed, expected  but is d63aa0daf60d573bada235e2b4207617dcf24959
+                    
+[WARNING] Checksum validation failed, expected  but is d63aa0daf60d573bada235e2b4207617dcf24959 from nexus for http://118.178.131.206:8081/nexus/content/groups/public/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar
+Downloaded from nexus: http://118.178.131.206:8081/nexus/content/groups/public/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar (226 kB at 2.4 MB/s)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Nextday ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /root/net.mooctest/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ Nextday ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 6 source files to /root/net.mooctest/target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.490 s
+[INFO] Finished at: 2018-04-23T04:11:58Z
+[INFO] Final Memory: 17M/210M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for net.net.mooctest:Nextday:jar:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 61, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 72, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 83, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 94, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 105, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 116, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 127, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 138, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 149, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 160, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 171, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 182, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 193, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 204, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 215, column 9
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+Downloading from nexus: http://118.178.131.206:8081/nexus/content/groups/public/com/sun/tdk/jcov/jcov-maven-plugin/maven-metadata.xml
+Progress (1): 334 B
+                   
+Downloaded from nexus: http://118.178.131.206:8081/nexus/content/groups/public/com/sun/tdk/jcov/jcov-maven-plugin/maven-metadata.xml (334 B at 1.1 kB/s)
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Nextday 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jcov-maven-plugin:1.0:instr (default-cli) @ Nextday ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.567 s
+[INFO] Finished at: 2018-04-23T04:12:03Z
+[INFO] Final Memory: 19M/247M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for net.net.mooctest:Nextday:jar:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 61, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 72, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 83, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 94, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 105, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 116, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 127, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 138, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 149, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 160, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 171, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 182, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 193, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 204, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 215, column 9
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Nextday 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- jcov-maven-plugin:1.0:runtime (default-cli) @ Nextday ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.637 s
+[INFO] Finished at: 2018-04-23T04:12:07Z
+[INFO] Final Memory: 8M/241M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for net.net.mooctest:Nextday:jar:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 61, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 72, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 83, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 94, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 105, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 116, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 127, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 138, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 149, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 160, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 171, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 182, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 193, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 204, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 215, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 226, column 9
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Nextday 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Nextday ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /root/net.mooctest/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ Nextday ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Nextday ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /root/net.mooctest/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ Nextday ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to /root/net.mooctest/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ Nextday ---
+[INFO] Surefire report directory: /root/net.mooctest/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running net.net.mooctest.NextdayTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.232 s
+[INFO] Finished at: 2018-04-23T04:12:14Z
+[INFO] Final Memory: 16M/281M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for net.net.mooctest:Nextday:jar:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 61, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 72, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 83, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 94, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 105, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 116, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 127, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 138, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 149, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 160, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 171, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 182, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 193, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 204, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 215, column 9
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-surefire-plugin @ line 226, column 9
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Nextday 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- mcnode-maven-plugin:1.1:result (default-cli) @ Nextday ---
+/root/net.mooctest/src/main/java
+net/net.mooctest/Date.java increment ()V public
+net/net.mooctest/Date.java increment ()V public
+net/net.mooctest/Date.java equals (LObject;)Z public
+net/net.mooctest/Date.java equals (LObject;)Z public
+net/net.mooctest/Date.java equals (LObject;)Z public
+net/net.mooctest/Date.java equals (LObject;)Z public
+net/net.mooctest/Day.java increment ()Z public
+net/net.mooctest/Day.java setDay (ILMonth;)V public
+net/net.mooctest/Day.java isValid ()Z public
+net/net.mooctest/Day.java isValid ()Z public
+net/net.mooctest/Day.java isValid ()Z public
+net/net.mooctest/Day.java isValid ()Z public
+net/net.mooctest/Day.java equals (LObject;)Z public
+net/net.mooctest/Day.java equals (LObject;)Z public
+net/net.mooctest/Day.java equals (LObject;)Z public
+net/net.mooctest/Month.java setMonth (ILYear;)V public
+net/net.mooctest/Month.java getMonthSize ()I public
+net/net.mooctest/Month.java increment ()Z public
+net/net.mooctest/Month.java isValid ()Z public
+net/net.mooctest/Month.java isValid ()Z public
+net/net.mooctest/Month.java isValid ()Z public
+net/net.mooctest/Month.java isValid ()Z public
+net/net.mooctest/Month.java equals (LObject;)Z public
+net/net.mooctest/Month.java equals (LObject;)Z public
+net/net.mooctest/Month.java equals (LObject;)Z public
+net/net.mooctest/Year.java setYear (I)V public
+net/net.mooctest/Year.java increment ()Z public
+net/net.mooctest/Year.java isLeap ()Z public
+net/net.mooctest/Year.java isLeap ()Z public
+net/net.mooctest/Year.java isLeap ()Z public
+net/net.mooctest/Year.java isLeap ()Z public
+net/net.mooctest/Year.java isLeap ()Z public
+net/net.mooctest/Year.java isLeap ()Z public
+net/net.mooctest/Year.java isLeap ()Z public
+net/net.mooctest/Year.java isLeap ()Z public
+net/net.mooctest/Year.java isValid ()Z protected
+net/net.mooctest/Year.java equals (LObject;)Z public
+net/net.mooctest/Year.java equals (LObject;)Z public
+net.net.mooctest.Nextday.java.nextDay (LDate;)LDate; public static
+net.net.mooctest.CalendarUnit.java.setCurrentPos (I)V protected
+net.net.mooctest.Date.java.getYear ()LYear; public
+net.net.mooctest.Day.java.equals (LObject;)Z public
+net.net.mooctest.Day.java.isValid ()Z public
+net.net.mooctest.Day.java.<init> (ILMonth;)V public
+net.net.mooctest.Year.java.<init> (I)V public
+net.net.mooctest.Year.java.equals (LObject;)Z public
+net.net.mooctest.Month.java.setMonth (ILYear;)V public
+net.net.mooctest.Day.java.setDay (ILMonth;)V public
+net.net.mooctest.Month.java.isValid ()Z public
+net.net.mooctest.Month.java.equals (LObject;)Z public
+net.net.mooctest.Date.java.<init> (III)V public
+net.net.mooctest.Date.java.getDay ()LDay; public
+net.net.mooctest.Date.java.toString ()LString; public
+net.net.mooctest.Date.java.increment ()V public
+net.net.mooctest.Date.java.printDate ()V public
+net.net.mooctest.Date.java.equals (LObject;)Z public
+net.net.mooctest.Year.java.setYear (I)V public
+net.net.mooctest.Year.java.isLeap ()Z public
+net.net.mooctest.Month.java.increment ()Z public
+net.net.mooctest.Day.java.increment ()Z public
+net.net.mooctest.Month.java.<init> (ILYear;)V public
+net.net.mooctest.Date.java.getMonth ()LMonth; public
+net.net.mooctest.Month.java.getMonthSize ()I public
+net.net.mooctest.Year.java.getYear ()I public
+net.net.mooctest.Year.java.isValid ()Z protected
+net.net.mooctest.CalendarUnit.java.getCurrentPos ()I protected
+net.net.mooctest.Day.java.getDay ()I public
+net.net.mooctest.Month.java.getMonth ()I public
+net.net.mooctest.Year.java.increment ()Z public
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.481 s
+[INFO] Finished at: 2018-04-23T04:12:19Z
+[INFO] Final Memory: 11M/219M
+[INFO] ------------------------------------------------------------------------

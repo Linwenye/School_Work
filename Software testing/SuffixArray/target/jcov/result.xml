@@ -1,0 +1,756 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<coverage
+        xmlns='http://java.sun.com/jcov/namespace'
+        xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+        xsi:schemaLocation='http://java.sun.com/jcov/namespace coverage.xsd'>
+
+	<head>
+		<property name='coverage.generator.args' val=''/>
+		<property name='coverage.generator.mode' val='BRANCH'/>
+		<property name='coverage.generator.internal' val='include'/>
+		<property name='coverage.generator.include' val=''/>
+		<property name='coverage.generator.exclude' val=''/>
+		<property name='coverage.generator.caller_include' val='.*'/>
+		<property name='coverage.generator.caller_exclude' val=''/>
+		<property name='coverage.created.date' val='2018-04-23'/>
+		<property name='coverage.created.time' val='07:48:40'/>
+		<property name='coverage.generator.fullversion' val='2.0os.beta-1 built: 12 November 2017'/>
+		<property name='coverage.generator.name' val='jcov'/>
+		<property name='coverage.generator.version' val='2.0'/>
+		<property name='coverage.spec.version' val='1.3'/>
+		<property name='java.runtime.version' val='1.8.0_151-b12'/>
+		<property name='java.version' val='1.8.0_151'/>
+		<property name='os.arch' val='amd64'/>
+		<property name='os.name' val='Linux'/>
+		<property name='os.version' val='3.13.0-86-generic'/>
+		<property name='user.name' val='root'/>
+		<property name='dynamic.collected' val='false'/>
+		<property name='id.count' val='187'/>
+	</head>
+	<package name="net.mooctest">
+		<class name="SuffixArray" supername="java/lang/Object" checksum="2696346355" source="SuffixArray.java" flags=''>
+			<meth name="&lt;init&gt;" vmsig="()V" flags='' access="0" cons="true" length="5">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="0" count="0"/>
+					<exit s="4" e="4" opcode="return"/>
+				</bl>
+				<lt>0=5;</lt>
+			</meth>
+			<meth name="makeLCPArray" vmsig="([I[I[I)V" flags=' public static' access="9" length="114">
+				<bl s="0" e="14">
+					<methenter s="0" e="14" id="1" count="1"/>
+				</bl>
+				<bl s="15" e="20">
+					<fall s="15" e="20" id="15" count="1"/>
+					<br s="18" e="20">
+						<cond s="36" e="41" id="2" count="1" val="true"/>
+						<cond s="21" e="35" id="3" count="6" val="false"/>
+					</br>
+				</bl>
+				<bl s="21" e="35">
+					<goto s="33" e="35">
+						<tg s="15" e="20" id="4" count="6"/>
+					</goto>
+				</bl>
+				<bl s="36" e="41">
+				</bl>
+				<bl s="42" e="47">
+					<fall s="42" e="47" id="16" count="1"/>
+					<br s="45" e="47">
+						<cond s="113" e="113" id="5" count="1" val="true"/>
+						<cond s="48" e="55" id="6" count="6" val="false"/>
+					</br>
+				</bl>
+				<bl s="48" e="55">
+					<br s="53" e="55">
+						<cond s="107" e="112" id="7" count="1" val="true"/>
+						<cond s="56" e="66" id="8" count="5" val="false"/>
+					</br>
+				</bl>
+				<bl s="56" e="66">
+				</bl>
+				<bl s="67" e="83">
+					<fall s="67" e="83" id="17" count="5"/>
+					<br s="81" e="83">
+						<cond s="90" e="103" id="9" count="5" val="true"/>
+						<cond s="84" e="89" id="10" count="3" val="false"/>
+					</br>
+				</bl>
+				<bl s="84" e="89">
+					<goto s="87" e="89">
+						<tg s="67" e="83" id="11" count="3"/>
+					</goto>
+				</bl>
+				<bl s="90" e="103">
+					<br s="101" e="103">
+						<cond s="107" e="112" id="12" count="2" val="true"/>
+						<cond s="104" e="106" id="13" count="3" val="false"/>
+					</br>
+				</bl>
+				<bl s="104" e="106">
+				</bl>
+				<bl s="107" e="112">
+					<fall s="107" e="112" id="18" count="3"/>
+					<goto s="110" e="112">
+						<tg s="42" e="47" id="14" count="6"/>
+					</goto>
+				</bl>
+				<bl s="113" e="113">
+					<exit s="113" e="113" opcode="return"/>
+				</bl>
+				<lt>0=16;3=17;8=19;12=20;21=21;30=20;36=23;39=24;48=25;56=27;67=29;84=30;90=32;99=33;104=34;107=24;113=36;</lt>
+			</meth>
+			<meth name="createSuffixArray" vmsig="(Ljava/lang/String;[I[I)V" flags=' public static' access="9" length="88">
+				<bl s="0" e="21">
+					<methenter s="0" e="21" id="19" count="1"/>
+				</bl>
+				<bl s="22" e="27">
+					<fall s="22" e="27" id="26" count="1"/>
+					<br s="25" e="27">
+						<cond s="45" e="58" id="20" count="1" val="true"/>
+						<cond s="28" e="44" id="21" count="6" val="false"/>
+					</br>
+				</bl>
+				<bl s="28" e="44">
+					<goto s="42" e="44">
+						<tg s="22" e="27" id="22" count="6"/>
+					</goto>
+				</bl>
+				<bl s="45" e="58">
+				</bl>
+				<bl s="59" e="64">
+					<fall s="59" e="64" id="27" count="1"/>
+					<br s="62" e="64">
+						<cond s="80" e="87" id="23" count="1" val="true"/>
+						<cond s="65" e="79" id="24" count="6" val="false"/>
+					</br>
+				</bl>
+				<bl s="65" e="79">
+					<goto s="77" e="79">
+						<tg s="59" e="64" id="25" count="6"/>
+					</goto>
+				</bl>
+				<bl s="80" e="87">
+					<exit s="87" e="87" opcode="return"/>
+				</bl>
+				<lt>0=45;5=47;12=48;19=50;28=51;39=50;45=53;56=55;65=56;74=55;80=58;87=59;</lt>
+			</meth>
+			<meth name="makeSuffixArray" vmsig="([I[III)V" flags=' public static' access="9" length="162">
+				<bl s="0" e="69">
+					<methenter s="0" e="69" id="28" count="1"/>
+				</bl>
+				<bl s="70" e="78">
+					<fall s="70" e="78" id="34" count="1"/>
+					<br s="76" e="78">
+						<cond s="102" e="161" id="29" count="1" val="true"/>
+						<cond s="79" e="85" id="30" count="6" val="false"/>
+					</br>
+				</bl>
+				<bl s="79" e="85">
+					<br s="83" e="85">
+						<cond s="96" e="101" id="31" count="2" val="true"/>
+						<cond s="86" e="95" id="32" count="4" val="false"/>
+					</br>
+				</bl>
+				<bl s="86" e="95">
+				</bl>
+				<bl s="96" e="101">
+					<fall s="96" e="101" id="35" count="4"/>
+					<goto s="99" e="101">
+						<tg s="70" e="78" id="33" count="6"/>
+					</goto>
+				</bl>
+				<bl s="102" e="161">
+					<exit s="161" e="161" opcode="return"/>
+				</bl>
+				<lt>0=66;7=67;14=68;19=69;26=70;36=72;44=73;52=74;58=75;64=80;79=81;86=82;96=80;102=84;117=86;128=87;143=88;161=89;</lt>
+			</meth>
+			<meth name="assignNames" vmsig="([I[I[IIII)I" flags=' private static' access="10" length="167">
+				<bl s="0" e="47">
+					<methenter s="0" e="47" id="36" count="1"/>
+				</bl>
+				<bl s="48" e="54">
+					<fall s="48" e="54" id="49" count="1"/>
+					<br s="52" e="54">
+						<cond s="164" e="166" id="37" count="1" val="true"/>
+						<cond s="55" e="65" id="38" count="4" val="false"/>
+					</br>
+				</bl>
+				<bl s="55" e="65">
+					<br s="63" e="65">
+						<cond s="92" e="122" id="39" count="2" val="true"/>
+						<cond s="66" e="78" id="40" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="66" e="78">
+					<br s="76" e="78">
+						<cond s="92" e="122" id="41" count="1" val="true"/>
+						<cond s="79" e="91" id="42" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="79" e="91">
+					<br s="89" e="91">
+						<cond s="123" e="132" id="43" count="0" val="true"/>
+						<cond s="92" e="122" id="44" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="92" e="122">
+				</bl>
+				<bl s="123" e="132">
+					<fall s="123" e="132" id="50" count="4"/>
+					<br s="130" e="132">
+						<cond s="146" e="157" id="45" count="2" val="true"/>
+						<cond s="133" e="145" id="46" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="133" e="145">
+					<goto s="143" e="145">
+						<tg s="158" e="163" id="47" count="2"/>
+					</goto>
+				</bl>
+				<bl s="146" e="157">
+				</bl>
+				<bl s="158" e="163">
+					<fall s="158" e="163" id="51" count="2"/>
+					<goto s="161" e="163">
+						<tg s="48" e="54" id="48" count="4"/>
+					</goto>
+				</bl>
+				<bl s="164" e="166">
+					<exit s="166" e="166" opcode="ireturn"/>
+				</bl>
+				<lt>0=100;11=101;22=102;33=105;36=106;45=108;55=110;92=113;95=114;103=115;113=116;123=119;133=120;146=122;158=108;164=125;</lt>
+			</meth>
+			<meth name="radixPass" vmsig="([I[I[IIII)V" flags=' private static' access="10" length="113">
+				<bl s="0" e="10">
+					<methenter s="0" e="10" id="52" count="4"/>
+				</bl>
+				<bl s="11" e="17">
+					<fall s="11" e="17" id="62" count="4"/>
+					<br s="15" e="17">
+						<cond s="41" e="43" id="53" count="4" val="true"/>
+						<cond s="18" e="40" id="54" count="14" val="false"/>
+					</br>
+				</bl>
+				<bl s="18" e="40">
+					<goto s="38" e="40">
+						<tg s="11" e="17" id="55" count="14"/>
+					</goto>
+				</bl>
+				<bl s="41" e="43">
+				</bl>
+				<bl s="44" e="52">
+					<fall s="44" e="52" id="63" count="4"/>
+					<br s="50" e="52">
+						<cond s="74" e="76" id="56" count="4" val="true"/>
+						<cond s="53" e="73" id="57" count="1028" val="false"/>
+					</br>
+				</bl>
+				<bl s="53" e="73">
+					<goto s="71" e="73">
+						<tg s="44" e="52" id="58" count="1028"/>
+					</goto>
+				</bl>
+				<bl s="74" e="76">
+				</bl>
+				<bl s="77" e="83">
+					<fall s="77" e="83" id="64" count="4"/>
+					<br s="81" e="83">
+						<cond s="112" e="112" id="59" count="4" val="true"/>
+						<cond s="84" e="111" id="60" count="14" val="false"/>
+					</br>
+				</bl>
+				<bl s="84" e="111">
+					<goto s="109" e="111">
+						<tg s="77" e="83" id="61" count="14"/>
+					</goto>
+				</bl>
+				<bl s="112" e="112">
+					<exit s="112" e="112" opcode="return"/>
+				</bl>
+				<lt>0=135;8=137;18=138;35=137;41=140;53=141;68=140;74=143;84=144;106=143;112=145;</lt>
+			</meth>
+			<meth name="radixPass" vmsig="([I[I[III)V" flags=' private static' access="10" length="11">
+				<bl s="0" e="10">
+					<methenter s="0" e="10" id="65" count="1"/>
+					<exit s="10" e="10" opcode="return"/>
+				</bl>
+				<lt>0=152;10=153;</lt>
+			</meth>
+			<meth name="computeS12" vmsig="([I[III)V" flags=' private static' access="10" length="66">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="66" count="1"/>
+					<br s="2" e="4">
+						<cond s="33" e="42" id="67" count="0" val="true"/>
+						<cond s="5" e="7" id="68" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="5" e="7">
+				</bl>
+				<bl s="8" e="13">
+					<fall s="8" e="13" id="76" count="1"/>
+					<br s="11" e="13">
+						<cond s="30" e="32" id="69" count="1" val="true"/>
+						<cond s="14" e="29" id="70" count="4" val="false"/>
+					</br>
+				</bl>
+				<bl s="14" e="29">
+					<goto s="27" e="29">
+						<tg s="8" e="13" id="71" count="4"/>
+					</goto>
+				</bl>
+				<bl s="30" e="32">
+					<goto s="30" e="32">
+						<tg s="65" e="65" id="72" count="1"/>
+					</goto>
+				</bl>
+				<bl s="33" e="42">
+				</bl>
+				<bl s="43" e="48">
+					<fall s="43" e="48" id="77" count="0"/>
+					<br s="46" e="48">
+						<cond s="65" e="65" id="73" count="0" val="true"/>
+						<cond s="49" e="64" id="74" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="49" e="64">
+					<goto s="62" e="64">
+						<tg s="43" e="48" id="75" count="0"/>
+					</goto>
+				</bl>
+				<bl s="65" e="65">
+					<exit s="65" e="65" opcode="return"/>
+				</bl>
+				<lt>0=159;5=160;14=161;24=160;33=164;40=166;49=167;59=166;65=169;</lt>
+			</meth>
+			<meth name="computeS0" vmsig="([I[I[I[IIII)V" flags=' private static' access="10" length="52">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="78" count="1"/>
+				</bl>
+				<bl s="6" e="12">
+					<fall s="6" e="12" id="84" count="1"/>
+					<br s="10" e="12">
+						<cond s="41" e="51" id="79" count="1" val="true"/>
+						<cond s="13" e="21" id="80" count="4" val="false"/>
+					</br>
+				</bl>
+				<bl s="13" e="21">
+					<br s="19" e="21">
+						<cond s="35" e="40" id="81" count="2" val="true"/>
+						<cond s="22" e="34" id="82" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="22" e="34">
+				</bl>
+				<bl s="35" e="40">
+					<fall s="35" e="40" id="85" count="2"/>
+					<goto s="38" e="40">
+						<tg s="6" e="12" id="83" count="4"/>
+					</goto>
+				</bl>
+				<bl s="41" e="51">
+					<exit s="51" e="51" opcode="return"/>
+				</bl>
+				<lt>0=174;13=175;22=176;35=174;41=178;51=179;</lt>
+			</meth>
+			<meth name="merge" vmsig="([I[I[I[I[IIIII)V" flags=' private static' access="10" length="139">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="86" count="1"/>
+				</bl>
+				<bl s="6" e="12">
+					<fall s="6" e="12" id="101" count="1"/>
+					<br s="10" e="12">
+						<cond s="85" e="91" id="87" count="0" val="true"/>
+						<cond s="13" e="19" id="88" count="5" val="false"/>
+					</br>
+				</bl>
+				<bl s="13" e="19">
+					<br s="17" e="19">
+						<cond s="85" e="91" id="89" count="1" val="true"/>
+						<cond s="20" e="54" id="90" count="4" val="false"/>
+					</br>
+				</bl>
+				<bl s="20" e="54">
+					<br s="52" e="54">
+						<cond s="70" e="81" id="91" count="2" val="true"/>
+						<cond s="55" e="69" id="92" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="55" e="69">
+					<goto s="67" e="69">
+						<tg s="82" e="84" id="93" count="2"/>
+					</goto>
+				</bl>
+				<bl s="70" e="81">
+				</bl>
+				<bl s="82" e="84">
+					<fall s="82" e="84" id="102" count="2"/>
+					<goto s="82" e="84">
+						<tg s="6" e="12" id="94" count="4"/>
+					</goto>
+				</bl>
+				<bl s="85" e="91">
+					<br s="89" e="91">
+						<cond s="109" e="115" id="95" count="1" val="true"/>
+						<cond s="92" e="108" id="96" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="92" e="108">
+					<goto s="106" e="108">
+						<tg s="85" e="91" id="97" count="0"/>
+					</goto>
+				</bl>
+				<bl s="109" e="115">
+					<br s="113" e="115">
+						<cond s="138" e="138" id="98" count="1" val="true"/>
+						<cond s="116" e="137" id="99" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="116" e="137">
+					<goto s="135" e="137">
+						<tg s="109" e="115" id="100" count="2"/>
+					</goto>
+				</bl>
+				<bl s="138" e="138">
+					<exit s="138" e="138" opcode="return"/>
+				</bl>
+				<lt>0=187;6=189;20=191;31=192;37=194;55=196;64=197;70=201;79=202;82=204;85=206;92=207;109=208;116=209;138=210;</lt>
+			</meth>
+			<meth name="getIndexIntoS" vmsig="([III)I" flags=' private static' access="10" length="25">
+				<bl s="0" e="6">
+					<methenter s="0" e="6" id="103" count="6"/>
+					<br s="4" e="6">
+						<cond s="15" e="24" id="104" count="2" val="true"/>
+						<cond s="7" e="14" id="105" count="4" val="false"/>
+					</br>
+				</bl>
+				<bl s="7" e="14">
+					<exit s="14" e="14" opcode="ireturn"/>
+				</bl>
+				<bl s="15" e="24">
+					<exit s="24" e="24" opcode="ireturn"/>
+				</bl>
+				<lt>0=214;7=215;15=217;</lt>
+			</meth>
+			<meth name="leq" vmsig="(IIII)Z" flags=' private static' access="10" length="21">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="106" count="4"/>
+					<br s="2" e="4">
+						<cond s="15" e="18" id="107" count="2" val="true"/>
+						<cond s="5" e="9" id="108" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="5" e="9">
+					<br s="7" e="9">
+						<cond s="19" e="19" id="109" count="1" val="true"/>
+						<cond s="10" e="14" id="110" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="10" e="14">
+					<br s="12" e="14">
+						<cond s="19" e="19" id="111" count="1" val="true"/>
+						<cond s="15" e="18" id="112" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="15" e="18">
+					<goto s="16" e="18">
+						<tg s="20" e="20" id="113" count="2"/>
+					</goto>
+				</bl>
+				<bl s="19" e="19">
+				</bl>
+				<bl s="20" e="20">
+					<fall s="20" e="20" id="114" count="2"/>
+					<exit s="20" e="20" opcode="ireturn"/>
+				</bl>
+				<lt>0=221;</lt>
+			</meth>
+			<meth name="leq" vmsig="(IIIIII)Z" flags=' private static' access="10" length="28">
+				<bl s="0" e="4">
+					<methenter s="0" e="4" id="115" count="1"/>
+					<br s="2" e="4">
+						<cond s="22" e="25" id="116" count="0" val="true"/>
+						<cond s="5" e="9" id="117" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="5" e="9">
+					<br s="7" e="9">
+						<cond s="26" e="26" id="118" count="0" val="true"/>
+						<cond s="10" e="21" id="119" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="10" e="21">
+					<br s="19" e="21">
+						<cond s="26" e="26" id="120" count="0" val="true"/>
+						<cond s="22" e="25" id="121" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="22" e="25">
+					<goto s="23" e="25">
+						<tg s="27" e="27" id="122" count="1"/>
+					</goto>
+				</bl>
+				<bl s="26" e="26">
+				</bl>
+				<bl s="27" e="27">
+					<fall s="27" e="27" id="123" count="0"/>
+					<exit s="27" e="27" opcode="ireturn"/>
+				</bl>
+				<lt>0=224;</lt>
+			</meth>
+			<meth name="suffix12IsSmaller" vmsig="([I[I[IIIII)Z" flags=' private static' access="10" length="76">
+				<bl s="0" e="7">
+					<methenter s="0" e="7" id="124" count="4"/>
+					<br s="5" e="7">
+						<cond s="34" e="75" id="125" count="1" val="true"/>
+						<cond s="8" e="33" id="126" count="3" val="false"/>
+					</br>
+				</bl>
+				<bl s="8" e="33">
+					<exit s="33" e="33" opcode="ireturn"/>
+				</bl>
+				<bl s="34" e="75">
+					<exit s="75" e="75" opcode="ireturn"/>
+				</bl>
+				<lt>0=229;8=230;34=233;</lt>
+			</meth>
+			<meth name="printV" vmsig="([ILjava/lang/String;)V" flags=' public static' access="9" length="84">
+				<bl s="0" e="32">
+					<methenter s="0" e="32" id="127" count="1"/>
+				</bl>
+				<bl s="33" e="38">
+					<fall s="33" e="38" id="131" count="1"/>
+					<br s="36" e="38">
+						<cond s="77" e="83" id="128" count="1" val="true"/>
+						<cond s="39" e="76" id="129" count="3" val="false"/>
+					</br>
+				</bl>
+				<bl s="39" e="76">
+					<goto s="74" e="76">
+						<tg s="33" e="38" id="130" count="3"/>
+					</goto>
+				</bl>
+				<bl s="77" e="83">
+					<exit s="83" e="83" opcode="return"/>
+				</bl>
+				<lt>0=239;25=240;45=241;71=240;77=243;83=244;</lt>
+			</meth>
+			<meth name="isPermutation" vmsig="([II)Z" flags=' public static' access="9" length="63">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="132" count="1"/>
+				</bl>
+				<bl s="6" e="10">
+					<fall s="6" e="10" id="144" count="1"/>
+					<br s="8" e="10">
+						<cond s="21" e="22" id="133" count="1" val="true"/>
+						<cond s="11" e="20" id="134" count="3" val="false"/>
+					</br>
+				</bl>
+				<bl s="11" e="20">
+					<goto s="18" e="20">
+						<tg s="6" e="10" id="135" count="3"/>
+					</goto>
+				</bl>
+				<bl s="21" e="22">
+				</bl>
+				<bl s="23" e="27">
+					<fall s="23" e="27" id="145" count="1"/>
+					<br s="25" e="27">
+						<cond s="40" e="41" id="136" count="1" val="true"/>
+						<cond s="28" e="39" id="137" count="3" val="false"/>
+					</br>
+				</bl>
+				<bl s="28" e="39">
+					<goto s="37" e="39">
+						<tg s="23" e="27" id="138" count="3"/>
+					</goto>
+				</bl>
+				<bl s="40" e="41">
+				</bl>
+				<bl s="42" e="46">
+					<fall s="42" e="46" id="146" count="1"/>
+					<br s="44" e="46">
+						<cond s="61" e="62" id="139" count="1" val="true"/>
+						<cond s="47" e="52" id="140" count="3" val="false"/>
+					</br>
+				</bl>
+				<bl s="47" e="52">
+					<br s="50" e="52">
+						<cond s="55" e="60" id="141" count="3" val="true"/>
+						<cond s="53" e="54" id="142" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="53" e="54">
+					<exit s="54" e="54" opcode="ireturn"/>
+				</bl>
+				<bl s="55" e="60">
+					<goto s="58" e="60">
+						<tg s="42" e="46" id="143" count="3"/>
+					</goto>
+				</bl>
+				<bl s="61" e="62">
+					<exit s="62" e="62" opcode="ireturn"/>
+				</bl>
+				<lt>0=248;4=250;11=251;15=250;21=253;28=254;34=253;40=256;47=257;53=258;55=256;61=260;</lt>
+			</meth>
+			<meth name="sleq" vmsig="([II[II)Z" flags=' public static' access="9" length="41">
+				<bl s="0" e="5">
+					<methenter s="0" e="5" id="147" count="6"/>
+				</bl>
+				<bl s="6" e="16">
+					<fall s="6" e="16" id="153" count="6"/>
+					<br s="14" e="16">
+						<cond s="19" e="29" id="148" count="4" val="true"/>
+						<cond s="17" e="18" id="149" count="2" val="false"/>
+					</br>
+				</bl>
+				<bl s="17" e="18">
+					<exit s="18" e="18" opcode="ireturn"/>
+				</bl>
+				<bl s="19" e="29">
+					<br s="27" e="29">
+						<cond s="32" e="40" id="150" count="4" val="true"/>
+						<cond s="30" e="31" id="151" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="30" e="31">
+					<exit s="31" e="31" opcode="ireturn"/>
+				</bl>
+				<bl s="32" e="40">
+					<goto s="38" e="40">
+						<tg s="6" e="16" id="152" count="4"/>
+					</goto>
+				</bl>
+				<lt>0=265;6=267;17=268;19=270;30=271;32=265;</lt>
+			</meth>
+			<meth name="isSorted" vmsig="([I[II)Z" flags=' public static' access="9" length="35">
+				<bl s="0" e="1">
+					<methenter s="0" e="1" id="154" count="3"/>
+				</bl>
+				<bl s="2" e="8">
+					<fall s="2" e="8" id="160" count="3"/>
+					<br s="6" e="8">
+						<cond s="33" e="34" id="155" count="0" val="true"/>
+						<cond s="9" e="24" id="156" count="5" val="false"/>
+					</br>
+				</bl>
+				<bl s="9" e="24">
+					<br s="22" e="24">
+						<cond s="27" e="32" id="157" count="2" val="true"/>
+						<cond s="25" e="26" id="158" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="25" e="26">
+					<exit s="26" e="26" opcode="ireturn"/>
+				</bl>
+				<bl s="27" e="32">
+					<goto s="30" e="32">
+						<tg s="2" e="8" id="159" count="2"/>
+					</goto>
+				</bl>
+				<bl s="33" e="34">
+					<exit s="34" e="34" opcode="ireturn"/>
+				</bl>
+				<lt>0=278;9=279;25=280;27=278;33=282;</lt>
+			</meth>
+			<meth name="computeLCP" vmsig="(Ljava/lang/String;Ljava/lang/String;)I" flags=' public static' access="9" length="39">
+				<bl s="0" e="1">
+					<methenter s="0" e="1" id="161" count="5"/>
+				</bl>
+				<bl s="2" e="9">
+					<fall s="2" e="9" id="169" count="5"/>
+					<br s="7" e="9">
+						<cond s="37" e="38" id="162" count="3" val="true"/>
+						<cond s="10" e="17" id="163" count="8" val="false"/>
+					</br>
+				</bl>
+				<bl s="10" e="17">
+					<br s="15" e="17">
+						<cond s="37" e="38" id="164" count="0" val="true"/>
+						<cond s="18" e="30" id="165" count="8" val="false"/>
+					</br>
+				</bl>
+				<bl s="18" e="30">
+					<br s="28" e="30">
+						<cond s="37" e="38" id="166" count="2" val="true"/>
+						<cond s="31" e="36" id="167" count="6" val="false"/>
+					</br>
+				</bl>
+				<bl s="31" e="36">
+					<goto s="34" e="36">
+						<tg s="2" e="9" id="168" count="6"/>
+					</goto>
+				</bl>
+				<bl s="37" e="38">
+					<exit s="38" e="38" opcode="ireturn"/>
+				</bl>
+				<lt>0=290;2=292;31=293;37=295;</lt>
+			</meth>
+			<meth name="createSuffixArraySlow" vmsig="(Ljava/lang/String;[I[I)V" flags=' public static' access="9" length="136">
+				<bl s="0" e="8">
+					<methenter s="0" e="8" id="170" count="1"/>
+					<br s="6" e="8">
+						<cond s="18" e="25" id="171" count="0" val="true"/>
+						<cond s="9" e="17" id="172" count="1" val="false"/>
+					</br>
+				</bl>
+				<bl s="9" e="17">
+					<br s="15" e="17">
+						<cond s="26" e="39" id="173" count="1" val="true"/>
+						<cond s="18" e="25" id="174" count="0" val="false"/>
+					</br>
+				</bl>
+				<bl s="18" e="25">
+					<exit s="25" e="25" opcode="athrow"/>
+				</bl>
+				<bl s="26" e="39">
+				</bl>
+				<bl s="40" e="45">
+					<fall s="40" e="45" id="184" count="1"/>
+					<br s="43" e="45">
+						<cond s="63" e="70" id="175" count="1" val="true"/>
+						<cond s="46" e="62" id="176" count="6" val="false"/>
+					</br>
+				</bl>
+				<bl s="46" e="62">
+					<goto s="60" e="62">
+						<tg s="40" e="45" id="177" count="6"/>
+					</goto>
+				</bl>
+				<bl s="63" e="70">
+				</bl>
+				<bl s="71" e="76">
+					<fall s="71" e="76" id="185" count="1"/>
+					<br s="74" e="76">
+						<cond s="97" e="103" id="178" count="1" val="true"/>
+						<cond s="77" e="96" id="179" count="6" val="false"/>
+					</br>
+				</bl>
+				<bl s="77" e="96">
+					<goto s="94" e="96">
+						<tg s="71" e="76" id="180" count="6"/>
+					</goto>
+				</bl>
+				<bl s="97" e="103">
+				</bl>
+				<bl s="104" e="109">
+					<fall s="104" e="109" id="186" count="1"/>
+					<br s="107" e="109">
+						<cond s="135" e="135" id="181" count="1" val="true"/>
+						<cond s="110" e="134" id="182" count="5" val="false"/>
+					</br>
+				</bl>
+				<bl s="110" e="134">
+					<goto s="132" e="134">
+						<tg s="104" e="109" id="183" count="5"/>
+					</goto>
+				</bl>
+				<bl s="135" e="135">
+					<exit s="135" e="135" opcode="return"/>
+				</bl>
+				<lt>0=307;18=308;26=310;31=312;37=313;46=314;57=313;63=316;68=318;77=319;91=318;97=321;101=322;110=323;129=322;135=324;</lt>
+			</meth>
+		</class>
+	</package>
+</coverage>

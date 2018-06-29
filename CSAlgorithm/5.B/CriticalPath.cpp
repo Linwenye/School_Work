@@ -4,7 +4,7 @@
 using namespace std;
 
 void DFS(int node, int parent);
-int *state, *est, *crit, *eft, *task_time;
+int *state, *est, *crit, *eft, *weight;
 int n = 0;
 int res = 0;
 vector<int>* graph;
@@ -15,13 +15,13 @@ int main() {
 	est = new int[n]();
 	eft = new int[n]();
 	crit = new int[n]();
-	task_time = new int[n]();
+	weight = new int[n]();
 
 	int num1 = 0, num2 = 0;
 	for (int i = 0; i < n; i++) {
 		cin >> num1;
 		cin >> num2;
-		task_time[num1 - 1] = num2;
+		weight[num1 - 1] = num2;
 	}
 	while (cin >> num1&&cin >> num2)
 	{
@@ -43,7 +43,7 @@ int main() {
 	delete[]graph;
 	delete[]est;
 	delete[]eft;
-	delete[]task_time;
+	delete[]weight;
 	delete[]crit;
 	return 0;
 }
@@ -73,7 +73,7 @@ void DFS(int node, int parent)
 			}
 		}
 	}
-	eft[node] = est[node] + task_time[node];
+	eft[node] = est[node] + weight[node];
 	if (eft[node]>res)
 	{
 		res = eft[node];
